@@ -34,7 +34,7 @@ class NODEForm extends ConfigFormBase{
         $node = \Drupal::routeMatch()->getParameter('node');
         $nid = $node->nid->value;
         $config = $this->config('node_json.apitext');
-        $form['text'] = [
+        $form['text'] =  array (
             '#title' => $this-> t('Enter api Key'),
             '#type' => 'textfield',
             '#size' => '20',
@@ -42,11 +42,12 @@ class NODEForm extends ConfigFormBase{
             '#description' =>$this->t('Submit API KEY'),
             '#required' => TRUE,
             '#default_value' => $config->get('text'),
-        ];
-        $form['submit'] = [
+        
+    );
+        $form['submit'] = array(
             '#type' => 'submit',
             '#value' => $this-> t('Submit API key'),
-        ];
+        );
     
         return $form;
     }

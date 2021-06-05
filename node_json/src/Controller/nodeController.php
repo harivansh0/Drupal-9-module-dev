@@ -16,13 +16,13 @@ class nodeController extends ControllerBase{
           $node_id = !empty($node);
           $key = \Drupal::config('node_json.apitext')->get('text');
           if($apikey == $key && $node_id){
-              return new JsonResponse(
-                [
+              return new JsonResponse ([
                   '#type' => 'markup',
                   '#markup' => $this->t('apikey : '. $key),
                   'method' => 'GET',
+                
               ]
-              );
+            );
           }
           else {
               return(
