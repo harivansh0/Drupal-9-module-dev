@@ -1,0 +1,7 @@
+formtype.form:
+  path: '/admin/formtype'
+  defaults:
+    _form: '\Drupal\formtype\Form\typeForm'
+    _title: 'Form Cotent'
+  requirements:
+    _permission: 'access content'

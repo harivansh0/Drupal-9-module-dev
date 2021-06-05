@@ -1,0 +1,7 @@
+name: Form Type
+description: Form Type 
+type:  module
+package: Form Type
+version: 1.0
+core_version_requirement: ^9.1
+configure: formtype.admin_settings
