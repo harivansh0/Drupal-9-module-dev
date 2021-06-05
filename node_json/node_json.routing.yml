@@ -1,0 +1,18 @@
+node_json.form:
+  path: '/admin/config/node_json/api'
+  defaults: 
+    _form: '\Drupal\node_json\Form\NODEForm'
+    _title: 'Node Json Key'
+  requirements: 
+    _permission: 'acccess content'
+
+node_json.apikey:
+  path: '/data/{apikey}/{node_id}'
+  defaults: 
+    _controller: '\Drupal\node_json\Controller\nodeController::getKey'
+    _title: 'Api key'
+  methods: [GET]
+  requirements:
+    _permission: 'access content'
+
+

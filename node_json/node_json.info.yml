@@ -1,0 +1,7 @@
+name: Node Json Data
+description: Node Json Module
+package: Node Json Data
+type: module
+version: 1.0
+core_version_requirement: ^9.1
+configure: node_json.admin_settings
