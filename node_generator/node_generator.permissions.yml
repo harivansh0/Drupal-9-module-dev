@@ -1,0 +1,10 @@
+view node_generator:
+  title: 'View Node Generator From'
+  description: 'View and Submited the Generator Form'
+access node_generator report:
+  title: 'Acess Node_genrator'
+  description: 'Acess the Node-genrator Administrative setting'
+administer node_generator:
+  title: 'Administer Node Generator Setting'
+  description: 'Access the node administrative setting'
+  restrict access: true;
