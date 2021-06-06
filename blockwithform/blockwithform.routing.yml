@@ -1,0 +1,7 @@
+blockwithform.form:
+  path: '/blockwithform'
+  defaults:
+    _form: '\Drupal\blockwithform\Form\BlockWithForm'
+    _title: 'Block With Form'
+  requirements:
+    _permission: 'access content'

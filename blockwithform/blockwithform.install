@@ -1,0 +1,33 @@
+<?php
+/**
+ * Implements hook_schema().
+ *
+ */
+function blockwithform_schema() {
+  $schema['blockwithform'] = array(
+    'description' => 'Stores From detail',
+    'fields' => array(
+      'selection' => array(
+        'description' => 'Store selection',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'name' => array(
+        'description' => 'Store name',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => FALSE,
+        'default' => '',
+      ),
+      'created' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Timestamp for when form created was created.',
+      ),
+    ),
+  );
+
+  return $schema;
+}
